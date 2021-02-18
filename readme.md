@@ -29,3 +29,18 @@ yarn dev
 ```
 
 浏览器里能看到 vue logo 即成功。
+
+## 安装 element-plus  
+
+参考官网安装 [`element-plus`](https://element-plus.org/#/zh-CN/component/installation#npm-an-zhuang)，然后将 main.ts 文件中的代码改成如下：  
+
+```
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/lib/theme-chalk/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+app.use(ElementPlus)
+app.mount('#app')
+```
