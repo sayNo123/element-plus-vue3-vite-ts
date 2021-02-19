@@ -44,3 +44,7 @@ const app = createApp(App)
 app.use(ElementPlus)
 app.mount('#app')
 ```
+
+### 在 components 目录下创建一个 demo.vue 的文件  
+
+将 element-plus 代码写进去，再在 main.ts 文件中导入 demo.vue，`yarn dev` 运行看看是否正常。
